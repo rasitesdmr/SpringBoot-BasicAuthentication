@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgresql:
+    image: postgres:10.4
+    ports:
+      - "5433:5432"
+    restart: always
+    environment:
+      POSTGRES_USER: rasit
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: security
+
